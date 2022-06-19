@@ -65,12 +65,18 @@ p > * + * {
     margin-block-start: 1.5rem;
 }
 
+figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 /** Header **/
 header {
     background-color: var(--color-white);
     position: sticky;
     top: 0;
     box-shadow: var(--box-shadow);
+    z-index: 9999;
 }
 
 .header {
@@ -83,6 +89,10 @@ header {
 /** Main **/
 .main-content {
     padding: 5rem 0;
+}
+
+.main-content .container {
+    max-width: 1024px;
 }
 
 .main-content__title {
