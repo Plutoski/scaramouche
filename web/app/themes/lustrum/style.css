@@ -17,6 +17,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/** Root **/
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-green: rgb(28, 112, 126);
+    --color-green-dark: rgb(48, 70, 76);
+    --color-gold: rgb(186, 161, 79);
+    --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
 /** Base **/
 .container {
     max-width: 1536px;
@@ -24,14 +33,105 @@ body {
     padding: 0 1rem;
 }
 
+h1, h2, h3, h4, h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1;
+}
+
+/** Heading **/
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.75rem;
+}
+
+h4 {
+    font-size: 2.25rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+/** Content **/
 p > * + * {
     margin-block-start: 1.5rem;
 }
 
 /** Header **/
+header {
+    background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+/** Main **/
+.main-content {
+    padding: 5rem 0;
+}
+
+.main-content__title {
+    text-transform: uppercase;
+    margin-block-end: 1.5rem;
+}
+
+/** Hero **/
+.hero {
+    height: 500px;
+    padding: 5rem 0;
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero h1 {
+    color: var(--color-white);
+}
+
+/** Footer **/
+footer {
+    color: var(--color-white);
+}
+
+.footer-top {
+    background-color: var(--color-green);
+    padding: 4rem 0;
+}
+
+.footer-top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-bottom {
+    background-color: var(--color-green-dark);
+    padding: 1rem 0;
 }

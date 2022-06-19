@@ -27,7 +27,6 @@
             ]) ?>
             </nav>
         <?php } ?>
-
         </div>
     </div>
 </header>
