@@ -5,3 +5,33 @@ Description:        Lustrum - WordPress thema
 Version:            1.0
 Author:             Pluto
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** Base **/
+.container {
+    max-width: 1536px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+p > * + * {
+    margin-block-start: 1.5rem;
+}
+
+/** Header **/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
