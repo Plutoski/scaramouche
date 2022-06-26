@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('title') ?> | <?php bloginfo('description') ?></title>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/main.js"></script>
 </head>
 <body>
 
@@ -27,6 +29,12 @@
             ]) ?>
             </nav>
         <?php } ?>
+        </div>
+
+        <div class="hamburger">
+            <div class="hamburger-line hamburger-line-one"></div>
+            <div class="hamburger-line hamburger-line-two"></div>
+            <div class="hamburger-line hamburger-line-three"></div>
         </div>
     </div>
 </header>

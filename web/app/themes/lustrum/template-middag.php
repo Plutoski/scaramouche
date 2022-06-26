@@ -1,11 +1,13 @@
-<!-- 
-    Template Name: Nostalgische middag
- -->
+<?php 
+    /**
+     * Template Name: Nostalgische middag
+     */
 
- <?php 
     get_header();
 
     $image = get_field('image');
+    $audio_button = get_field('audio_button');
+    $video_button = get_field('video_button');
 ?>
 
 <main>
@@ -22,17 +24,29 @@
             <?php the_content(); ?>
 
             <div class="buttons">
-                <a href="#!">
-                    <button>
-                        Ga naar audio
-                    </button>
-                </a>
+                <?php 
+                    if($audio_button) {
+                        $link = $audio_button['url'];
+                        $title = $audio_button['title'];
+                ?>
+                    <a href="<?php echo bloginfo('url'); ?><?php echo $link ?>">
+                        <button>
+                            <?php echo $title ?>
+                        </button>
+                    </a>
+                <?php } ?>
 
-                <a href="#!">
-                    <button>
-                        Ga naar video
-                    </button>
-                </a>
+                <?php 
+                    if($video_button) {
+                        $link = $video_button['url'];
+                        $title = $video_button['title'];
+                ?>
+                    <a href="<?php echo bloginfo('url'); ?><?php echo $link ?>">
+                        <button>
+                            <?php echo $title ?>
+                        </button>
+                    </a>
+                <?php } ?>
             </div>
         </div>
     </section>

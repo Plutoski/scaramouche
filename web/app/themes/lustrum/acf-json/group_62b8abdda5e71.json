@@ -1,0 +1,55 @@
+{
+    "key": "group_62b8abdda5e71",
+    "title": "Buttons",
+    "fields": [
+        {
+            "key": "field_62b8abe5a2ea0",
+            "label": "Audio button",
+            "name": "audio_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62b8ac44a2ea1",
+            "label": "Video button",
+            "name": "video_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Component",
+    "show_in_rest": 0,
+    "modified": 1656269969
+}

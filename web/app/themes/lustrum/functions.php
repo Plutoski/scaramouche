@@ -13,6 +13,16 @@ register_nav_menus([
 ]);
 
 /**
+ * JavaScript
+ */
+add_action('wp_enqueue_scripts', 'load_styles_and_scripts');
+function load_styles_and_scripts()
+{
+    wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+}
+
+/**
  * Enable Nav Walker
  */
 class AWP_Menu_Walker extends Walker_Nav_Menu
