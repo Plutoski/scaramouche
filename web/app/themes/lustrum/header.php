@@ -11,16 +11,16 @@
 
 <header>
     <div class="container header">
-        <div class="logo">
-            <img src="<?php bloginfo('stylesheet_directory') ?>/images/logo.svg" />
-        </div>
+        <a href="<?php echo bloginfo('url'); ?>" class="logo">
+            <img src="<?php bloginfo('stylesheet_directory') ?>/images/logo.svg" alt="Lustrum GST 2022 Scaramouche" />
+        </a>
 
         <div class="menu">
         <?php if (has_nav_menu('primary_navigation')) { ?>
             <nav class="nav-primary" aria-label="<?php wp_get_nav_menu_name('primary_navigation') ?>">
-            <?php wp_nav_menu([
+            <?php echo wp_nav_menu([
                 'theme_location' => 'primary_navigation',
-                'menu_class' => 'primary-navigation',
+                'menu_class' => 'nav',
                 'echo' => false,
                 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 'walker' => new AWP_Menu_Walker()

@@ -1,4 +1,8 @@
-<?php 
+<!-- 
+    Template Name: Nostalgische middag
+ -->
+
+ <?php 
     get_header();
 
     $image = get_field('image');
@@ -16,6 +20,20 @@
     <section class="main-content">
         <div class="container">
             <?php the_content(); ?>
+
+            <div class="buttons">
+                <a href="#!">
+                    <button>
+                        Ga naar audio
+                    </button>
+                </a>
+
+                <a href="#!">
+                    <button>
+                        Ga naar video
+                    </button>
+                </a>
+            </div>
         </div>
     </section>
 </main>
