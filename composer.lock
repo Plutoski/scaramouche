@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b771d4fe7b75576900276168d559fff",
+    "content-hash": "c084a7079dd7efb11de0f737b186cecd",
     "packages": [
         {
             "name": "composer/installers",
@@ -1122,22 +1122,22 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.12.1",
+            "name": "wpackagist-plugin/duplicate-page",
+            "version": "4.4.8",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.12.1"
+                "url": "https://plugins.svn.wordpress.org/duplicate-page/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.12.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/duplicate-page.zip?timestamp=1643609612"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+            "homepage": "https://wordpress.org/plugins/duplicate-page/"
         },
         {
             "name": "wpackagist-theme/twentytwentytwo",
