@@ -266,6 +266,12 @@ header {
     padding: 1rem;
 }
 
+/** Single **/
+audio, 
+video {
+    width: 100%;
+}
+
 /** Footer **/
 footer {
     color: var(--color-white);

@@ -14,7 +14,7 @@
     </section>
 
     <section class="main-content">
-        <div class="container category">
+        <div class="container">
             <?php the_content(); ?>
         </div>
     </section>
